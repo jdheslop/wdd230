@@ -20,25 +20,52 @@ header {
     justify-content: center;
 }
 
+#darkMode {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    font-size: 0.5em;
+    background-color: rgba(180,172,164, 1);
+    color: #403737;
+    border: 2px solid #403737;
+    border-radius: 5px;
+}
+
 #myImage {
     margin: 0 5%;
     max-height: 120px;
     border-radius: 5px;
 }
 
+#menu {
+    padding: 0.3rem;
+    text-align: center;
+    margin: 0.3rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.display::before {
+	content: "|||";
+}
+
 nav {
     width: 100%;
     background-color: rgba(180,172,164, 0.5);
     margin: 0 auto;
+    text-align: right;
 }
 
-nav ul {
+.navbar {
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
+    display: none;
 }
 
-nav a {
+.navbar a {
     display: block;
     width: 100%;
     text-align: center;
@@ -46,14 +73,22 @@ nav a {
     padding: 1rem 0;
 }
 
-nav a:link, nav a:visited {
+.navbar a:link, .navbar a:visited {
     color: #403737;
     font-weight: bold;
 }
 
-nav li:hover, nav a:hover {
+.navbar li:hover, .navbar a:hover {
     color: #fbfbeb;
     background-color: #807475;
+}
+
+.displayMenu {
+    display: block;
+}
+
+.display {
+    display: inline-block;
 }
 
 .active {
@@ -68,6 +103,7 @@ main {
 
 h1 {
     text-align: center;
+    padding: 0.5rem 0;
 }
 
 .card h2 {

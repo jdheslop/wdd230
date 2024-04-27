@@ -10,11 +10,15 @@
         grid-template-columns: 2fr 1fr;
     }
     
-    nav ul {
+    #menu {
+        display: none;
+    }
+
+    .navbar {
         display: flex;
     }
 
-    nav ul li {
+    .navbar li {
         flex: 1 1 100%;
     }
 
