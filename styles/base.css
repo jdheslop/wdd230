@@ -66,11 +66,11 @@ main {
     margin: 0 auto;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
-h2 {
+.card h2 {
     color: #000000;
     background-color: #807475;
     margin: 0;
