@@ -3,6 +3,7 @@ const main = document.querySelector("main");
 const header = document.querySelector("header");
 const cardHeader = document.querySelectorAll(".cardHeader");
 const footer = document.querySelector("footer");
+const links = document.querySelectorAll(".card a")
 
 modeButton.addEventListener("click", function () {
 	if (modeButton.textContent.includes("Dark Mode")) {
@@ -13,7 +14,12 @@ modeButton.addEventListener("click", function () {
 
         cardHeader.forEach((header) => {
             header.style.color = "#ffffff";
-        });        
+        });
+
+        links.forEach((link) => {
+            link.style.color = "#ffffff";
+            link.style.textDecoration = "underline"; 
+        });
 
         footer.style.color = "#ffffff"
 
@@ -29,6 +35,11 @@ modeButton.addEventListener("click", function () {
         cardHeader.forEach((header) => {
             header.style.color = "#000000";
         });        
+
+        links.forEach((link) => {
+            link.style.color = "#551A8B";
+            link.style.textDecoration = "none"; 
+        });
 
         footer.style.color = "#000000"
 
