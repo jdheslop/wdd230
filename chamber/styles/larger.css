@@ -1,0 +1,64 @@
+@media screen and (min-width: 640px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .navbar li {
+        flex: 1 1 100%;
+    }
+
+    #heroImageWide {
+        display: inline;
+    }
+
+    #heroImageSmall {
+        display: none;
+    }
+
+    #servicesMenu, #eventsMenu, #spotlightsMenu {
+        display: none;
+    }
+
+    .cardImage, .serviceType, .eventType, .spotlightType {
+        display: block;
+    }
+
+    .cards {
+        display: flex;
+    }
+
+    .card {
+        border: 2px solid #006CAE;
+        border-radius: 5px;
+        width: 30%;
+        padding: 0.5rem;
+    }
+
+    .cardImage {
+        max-width: 95%;
+    }
+
+    #joinAndWeather {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #largeFooter {
+        display: block;
+    }
+
+    #mobileFooter {
+        display: none;
+    }
+
+    #address {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

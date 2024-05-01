@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freiberg am Neckar - Chamber of Commerce - Jackson Heslop</title>
+
+    <meta name="description" content="This is a chamber of commerce website for WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Jackson Heslop">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Jackson Heslop - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.freiberg-an.de/fileadmin/_processed_/7/0/csm_Luftbild_1228630031.jpg">
+    <meta property="og:url" content="https://jdheslop.github.io/wdd230/index.html">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="headerHeading">Chamber of Commerce</h1>
+        <h2 class="headerHeading">Freiberg am Neckar</h2>
+    </header>
+
+    <img id="heroImageWide" class="heroImage" src="images/hero-large-screen.jpg" alt="Image of Freiberg am Neckar">
+    <img id="heroImageSmall" class="heroImage" src="images/hero-small-screen.jpg" alt="Image of Freiberg am Neckar">
+
+    <nav>
+        <button id="menu"></button>
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <div>
+                <button id="servicesMenu"></button>
+                <h2 class="heading">Services</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3 class="serviceType">Service #1</h3>
+                    <img class="cardImage" src="images/csm_Stadtwappen_01_a91a4f486c.jpg"
+                        alt="Image for one of the services">
+                </div>
+                <div class="card">
+                    <h3 class="serviceType">Service #2</h3>
+                    <img class="cardImage" src="images/csm_Stadtwappen_01_a91a4f486c.jpg"
+                        alt="Image for one of the services">
+                </div>
+                <div class="card">
+                    <h3 class="serviceType">Service #3</h3>
+                    <img class="cardImage" src="images/hero-small-screen.jpg" alt="Image for one of the services">
+                </div>
+            </div>
+        </section>
+
+        <section id="joinAndWeather">
+            <div id="join">
+                <div>
+                    <h3 class="heading">Join Us</h3>
+                    <p>Joining the Freiberg am Neckar Chamber of Commerce is a strategic move for businesses, offering
+                        an
+                        expansive network where meaningful collaborations and partnerships flourish. Through regular
+                        events,
+                        workshops, and seminars, members gain not only industry insights but also opportunities for
+                        professional development and knowledge exchange. The Freiberg am Neckar Chamber of Commerce is
+                        more
+                        than just an organization—it's a dynamic ecosystem where businesses thrive, connect, and prosper
+                        together.
+                    </p>
+                </div>
+                <a id="joinButton" href="#">Join Today!</a>
+            </div>
+            <div id="weather" class="card">
+                <h3 class="heading">Weather</h3>
+                <p>Weather information will be provided here.</p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <button id="eventsMenu"></button>
+                <h2 class="heading">Current Events</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3 class="eventType">Event #1</h3>
+                    <img class="cardImage" src="images/csm_Stadtwappen_01_a91a4f486c.jpg"
+                        alt="Image for one of the events">
+                </div>
+                <div class="card">
+                    <h3 class="eventType">Event #2</h3>
+                    <img class="cardImage" src="images/csm_Stadtwappen_01_a91a4f486c.jpg"
+                        alt="Image for one of the events">
+                </div>
+                <div class="card">
+                    <h3 class="eventType">Event #3</h3>
+                    <img class="cardImage" src="images/hero-small-screen.jpg" alt="Image for one of the events">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <button id="spotlightsMenu"></button>
+                <h2 class="heading">Business Spotlights</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3 class="spotlightType">Spotlight #1</h3>
+                    <img class="cardImage" src="images/csm_Stadtwappen_01_a91a4f486c.jpg"
+                        alt="Image for one of the spotlights">
+                </div>
+                <div class="card">
+                    <h3 class="spotlightType">Spotlight #2</h3>
+                    <img class="cardImage" src="images/csm_Stadtwappen_01_a91a4f486c.jpg"
+                        alt="Image for one of the spotlights">
+                </div>
+                <div class="card">
+                    <h3 class="spotlightType">Spotlight #3</h3>
+                    <img class="cardImage" src="images/hero-small-screen.jpg" alt="Image for one of the events">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="address">
+            <img id="logo" src="images/logo.gif" alt="Freiberg am Neckar Logo">
+            <p id="street">Chamber of Commerce<br>
+                Freiberg am Neckar<br>
+                123 Commerce St.<br>
+                71691 Freiberg am Neckar<br>
+                Germany
+            </p>
+            <div id="location">
+                <p>info@email.de<br>
+                    +49 123 45678<br>
+                </p>
+                <a href="https://maps.app.goo.gl/hHVzEfHdNXdcuZBb7">📍 Location</a>
+            </div>
+        </div>
+        <hr>
+        <div id="mobileFooter">
+            <p>&copy;<span id="currentYearMobile"> Project</span></p>
+            <p>Jackson Heslop</p>
+            <p>WDD 230 Project</p>
+            <p><span id="lastModifiedMobile"></span></p>
+        </div>
+        <p id="largeFooter">&copy;<span id="currentYear"> Project</span> | Jackson Heslop | WDD 230 Project | <span
+                id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getDates.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    color: #5A5A5A;
+    text-align: center;
+}
+
+header {
+    background-color: #006CAE;
+    color: #FFFFFF;
+    padding: 0.5rem;
+}
+
+.headerHeading {
+    margin: 0.5rem auto;
+    text-align: center;
+}
+
+.heroImage {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#heroImageWide {
+    display: none;
+}
+
+#menu {
+    padding: 0.3rem;
+    text-align: center;
+    margin: 0.3rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.display::before {
+	content: "|||";
+}
+
+nav {
+    width: 100%;
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: none;
+}
+
+.navbar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 0;
+}
+
+.navbar a:link, .navbar a:visited {
+    color: #5A5A5A;
+    font-weight: bold;
+}
+
+.navbar li:hover, .navbar a:hover {
+    color: #5A5A5A;
+    background-color: #D2D2D2;
+}
+
+main {
+    width: 97%;
+    margin: 0 auto;
+}
+
+section {
+    margin: 2rem auto;
+}
+
+.heading {
+    background-color: #F2F2F2;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+}
+
+#servicesMenu, #eventsMenu, #spotlightsMenu {
+    padding: 0.3rem;
+    text-align: center;
+    margin: 0.3rem;
+    position: absolute;
+    right: 0.7rem;
+}
+
+#servicesMenu::before, #eventsMenu::before , #spotlightsMenu::before {
+    content: "+";
+}
+
+#servicesMenu.display::before, #eventsMenu.display::before, #spotlightsMenu.display::before {
+	content: "-";
+}
+
+.cardImage, .serviceType, .eventType, .spotlightType {
+    display: none;
+    padding: 0.3rem;
+}
+
+#join {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#joinButton {
+    margin: 0.5rem auto;
+    border: 2px solid #5A5A5A;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: #006CAE;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#joinButton:hover {
+    color: #5A5A5A;
+    background-color: #F2F2F2;
+    border-color: #006CAE;
+}
+
+#join, #weather {
+    width: 90%;
+}
+
+footer {
+    background-color: #D2D2D2;
+    color:#5A5A5A;
+    padding: 1rem 0.5rem 2rem 0.5rem;
+}
+
+#largeFooter {
+    display: none;
+}
+
+#logo, #street, #location {
+    margin: 0.3rem auto;
+}
+
+footer a {
+    color:#5A5A5A;
+}
+
+footer a:hover {
+    color:#006CAE;
+}
+
+hr {
+    margin: 1rem auto;
+    padding: 0.1rem;
+    width: 80%;
+    background-color: #5A5A5A;
+}
+
+/* Keep these at the bottom of the CSS file */
+
+.active {
+    background-color:rgba(0,0,0, 0.1);
+}
+
+.displayMenu {
+    display: block;
+}
+
+.display {
+    display: inline-block;
+}
+
