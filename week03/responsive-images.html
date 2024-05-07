@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Excercise - WDD230</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 900px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Mount Timpanogos Utah Temple" width="1200" height="600">
+                <span>Mount Timpanogos Utah Temple</span>
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>
