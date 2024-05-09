@@ -109,11 +109,11 @@ main {
 .hero {
     display: inline-block;
     text-align: center;
+    position: relative;
 }
 
 .hero picture {
     width: 100%;
-    position: relative;
 }
 
 .hero img {
@@ -126,13 +126,14 @@ main {
 
 .hero span {
     position: absolute;
-    top: 10%;
-    right: 5%;
+    top: 7%;
+    right: 3%;
     border: 2px solid #807475;
     border-radius: 5px;
     background: radial-gradient(#fff, rgba(180,172,164, 0.5));
     padding: 0.5rem;
     white-space: nowrap;
+    font-size: 0.9rem;
 }
 
 h1 {
