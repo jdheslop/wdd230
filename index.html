@@ -31,7 +31,7 @@
 <body>
 
     <header>
-        <img id="myImage" src="images/heslop.jpg" alt="Picture of Jackson Heslop">
+        <img id="myImage" src="images/heslop.webp" alt="Picture of Jackson Heslop">
         <h3><span>Jackson Heslop</span></h3>
         <button id="darkMode">Dark Mode</button>
     </header>
@@ -47,6 +47,16 @@
     </nav>
 
     <main>
+        <div class="heroDiv">
+            <div class="hero">
+                <picture>
+                    <source media="(max-width: 640px)" srcset="images/hero-small.webp">
+                    <img src="images/hero-large.webp" alt="Mount Timpanogos Utah Temple" width="960" height="480">
+                    <span>Mount Timpanogos<br>Temple</span>
+                </picture>
+            </div>
+        </div>
+
         <h1>WDD 230: Web Frontend Development</h1>
 
         <div id="mainGrid">
@@ -82,15 +92,27 @@
                 <h2 class="cardHeader">Information</h2>
                 <p>Location</p>
                 <p>Weather</p>
-                <p>Page Visits: X</p>
+                <p><span class="visits"></span></p>
             </section>
         </div>
+
+        <div class="iframeDiv">
+            <iframe class="iframeMobile"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41937.401384480414!2d9.148795475948518!3d48.93277355072575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799d23941baee49%3A0xe110206bf171c383!2sFreiberg!5e0!3m2!1sen!2sde!4v1715262763340!5m2!1sen!2sde"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="iframeLarger"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41937.401384480414!2d9.148795475948518!3d48.93277355072575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799d23941baee49%3A0xe110206bf171c383!2sFreiberg!5e0!3m2!1sen!2sde!4v1715262763340!5m2!1sen!2sde"
+                width="960" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
+
 
     <footer>
         <div id="footerText">
             <p>&copy;<span id="currentYear"></span> | Jackson Heslop | Germany | </p>
-            <img id="flag" src="images/german.png" alt="German Flag">
+            <img id="flag" src="images/german.webp" alt="German Flag">
         </div>
         <span id="lastModified"></span>
     </footer>
@@ -98,7 +120,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkMode.js"></script>
-
+    <script src="scripts/visitCounter.js"></script>
 </body>
 
 </html>

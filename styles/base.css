@@ -101,6 +101,40 @@ main {
     margin: 0 auto;
 }
 
+
+.heroDiv {
+    text-align: center;
+}
+
+.hero {
+    display: inline-block;
+    text-align: center;
+}
+
+.hero picture {
+    width: 100%;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.hero span {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    border: 2px solid #807475;
+    border-radius: 5px;
+    background: radial-gradient(#fff, rgba(180,172,164, 0.5));
+    padding: 0.5rem;
+    white-space: nowrap;
+}
+
 h1 {
     text-align: center;
     padding: 0.5rem 0;
@@ -146,6 +180,24 @@ section li a:hover {
 
 section p {
     text-align: center;
+}
+
+.iframeDiv {
+    text-align: center;
+}
+
+.iframeMobile, .iframeLarger {
+    margin: 1rem auto;
+    padding-top: 1rem;
+}
+
+.iframeMobile {
+    max-width: 400px;
+}
+
+.iframeLarger {
+    display: none;
+    max-width: 960px;
 }
 
 footer {
