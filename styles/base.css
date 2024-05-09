@@ -184,21 +184,20 @@ section p {
 }
 
 .iframeDiv {
+    max-width: 400px;
     text-align: center;
-}
-
-.iframeMobile, .iframeLarger {
-    margin: 1rem auto;
-    padding-top: 1rem;
+    margin: 2rem auto 1rem auto;
+    width: 90%;
+    border: 2px solid #807475;
+    border-radius: 5px;
 }
 
 .iframeMobile {
-    max-width: 400px;
+    width: 100%;
 }
 
 .iframeLarger {
     display: none;
-    max-width: 960px;
 }
 
 footer {

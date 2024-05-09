@@ -39,8 +39,13 @@
         display: none;
     }
 
+    .iframeDiv {
+        max-width: 960px;
+    }
+
     .iframeLarger {
         display: block;
+        width: 100%;
     }
 
 }
