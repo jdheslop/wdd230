@@ -28,10 +28,6 @@ header {
     margin: 0 auto;
 }
 
-#heroImageWide {
-    display: none;
-}
-
 #menu {
     padding: 0.3rem;
     text-align: center;
@@ -167,6 +163,165 @@ hr {
     width: 80%;
     background-color: #5A5A5A;
 }
+
+
+/* DISCOVER PAGE */
+
+#discoverGallery {
+    padding: 1rem 2rem;
+    margin: 0 0.5rem;
+}
+
+#sidebar {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;  
+}
+
+#mainArea h3 {
+    padding-bottom: 0.5rem;
+}
+
+.discoverImage {
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.imageBox {
+    margin: 1rem auto;
+}
+
+#discoverGallery, .sidebarBox {
+    border: 2px solid #006CAE;
+    border-radius: 10px;
+}
+
+.sidebarBox {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+}
+
+.sidebarBox h3 {
+    padding-bottom: 0.5rem;
+}
+
+.discoverCaption {
+    margin: 0.5rem auto;
+    padding-bottom: 1rem;
+}
+
+/* I used the following website for help in programming the calendar: https://www.geeksforgeeks.org/how-to-design-a-simple-calendar-using-javascript/ */
+
+.calendarBox {
+    width: 100%;
+    max-width: 450px;
+}
+
+.calendarHeader {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    justify-content: space-between;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.calendarNavigation {
+    display: flex;
+}
+
+.calendarNavigation span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    user-select: none;
+    color: #F2F2F2;
+    font-size: 1.5rem;
+}
+ 
+.calendarNavigation span:last-child {
+    margin-right: -10px;
+}
+ 
+.calendarNavigation span:hover {
+    background: #D2D2D2;
+    color: #ffffff;
+}
+ 
+.calendarCurrentDate {
+    font-size: 1.5rem;
+}
+ 
+.calendarBody {
+    padding-top: 20px;
+}
+ 
+.calendarBody ul {
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+}
+ 
+.calendarBody .calendarDates {
+    margin-bottom: 10px;
+}
+ 
+.calendarBody li {
+    width: calc(100% / 7);
+}
+ 
+.calendarBody .calendarWeekdays li {
+    cursor: default;
+}
+ 
+.calendarBody .calendarDates li {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.calendarDates, .calendarWeekdays {
+    padding-inline-start: 0;
+}
+
+.calendarDates li.inactive {
+    font-weight: normal;
+}
+ 
+.calendarDates li::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    transform: translate(-50%, -50%);
+}
+ 
+.calendarDates li.activeCal::before {
+    background: #006CAE;
+    opacity: 50%;
+}
+
+.calendarDates li.activeCal {
+    color: #000000;
+}
+
+.calendarDates li:not(.activeCal):hover::before {
+    background: #F2F2F2;
+}
+
+
 
 /* Keep these at the bottom of the CSS file */
 

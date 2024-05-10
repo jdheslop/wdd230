@@ -12,14 +12,6 @@
         flex: 1 1 100%;
     }
 
-    #heroImageWide {
-        display: inline;
-    }
-
-    #heroImageSmall {
-        display: none;
-    }
-
     #servicesMenu, #eventsMenu, #spotlightsMenu {
         display: none;
     }
@@ -60,5 +52,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+
+    /*DISCOVER PAGE*/
+
+    .discoverImage:hover {
+        border-radius: 20px;
+        opacity: 0.6;
+      }
+
+    #discoverGrid {
+        display: grid;
+        grid-template-columns: 325px 2fr;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
 
 }

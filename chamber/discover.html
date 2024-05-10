@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freiberg am Neckar - Chamber of Commerce - Jackson Heslop</title>
+
+    <meta name="description" content="This is a chamber of commerce website for WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Jackson Heslop">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Jackson Heslop - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.freiberg-an.de/fileadmin/_processed_/7/0/csm_Luftbild_1228630031.jpg">
+    <meta property="og:url" content="https://jdheslop.github.io/wdd230/index.html">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="headerHeading">Chamber of Commerce</h1>
+        <h2 class="headerHeading">Freiberg am Neckar</h2>
+    </header>
+
+    <picture>
+        <source media="(max-width: 640px)" srcset="images/hero-small-screen.webp">
+        <img class="heroImage" src="images/hero-large-screen.webp" alt="Image of Freiberg am Neckar" width="1800"
+            height="281">
+    </picture>
+
+    <nav>
+        <button id="menu"></button>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="discoverGrid">
+            <section id="sidebar">
+                <div class="sidebarBox">
+                    <h3>Site Information</h3>
+                    <span id="visitMessage"></span>
+                </div>
+                <div class="sidebarBox">
+                    <!-- I used the following website for help in programming the calendar: https://www.geeksforgeeks.org/how-to-design-a-simple-calendar-using-javascript/ -->
+                    <div class="calendarBox">
+                        <header class="calendarHeader">
+                            <p class="calendarCurrentDate"></p>
+                            <div class="calendarNavigation">
+                                <span id="calendarPrevious">
+                                    &#x276E;
+                                </span>
+                                <span id="calendarNext">
+                                    &#x276F;
+                                </span>
+                            </div>
+                        </header>
+
+                        <div class="calendarBody">
+                            <ul class="calendarWeekdays">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+                            <ul class="calendarDates"></ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="mainArea">
+                <h3>Enjoy the beauty of Freiberg am Neckar</h3>
+                <div id="discoverGallery">
+                    <div class="imageBox">
+                        <img class="discoverImage" src="images/discover01.webp" alt="China House" loading="lazy">
+                        <p class="discoverCaption">A view of the China House in Freiberg am Neckar.</p>
+                    </div>
+                    <div class="imageBox">
+                        <img class="discoverImage" src="images/discover02.webp" alt="Sunset" loading="lazy">
+                        <p class="discoverCaption">A beautiful sunset while walking along the Neckar river.</p>
+                    </div>
+                    <div class="imageBox">
+                        <img class="discoverImage" src="images/discover03.webp" alt="Traditional House" loading="lazy">
+                        <p class="discoverCaption">This "Fachwerkhaus" inspires us with traditional German craftmanship.
+                        </p>
+                    </div>
+                    <div class="imageBox">
+                        <img class="discoverImage" src="images/discover04.webp" alt="Old Castle" loading="lazy">
+                        <p class="discoverCaption">The original castle located in Heutingsheim.</p>
+                    </div>
+                    <div class="imageBox">
+                        <img class="discoverImage" src="images/discover05.webp" alt="Church" loading="lazy">
+                        <p class="discoverCaption">The Amanduskirche located in Beihingen.</p>
+                    </div>
+                    <div class="imageBox">
+                        <img class="discoverImage" src="images/discover06.webp" alt="Pathway" loading="lazy">
+                        <p class="discoverCaption">A walk along the Gründelbach.</p>
+                    </div>
+                    <div class="imageBox">
+                        <img class="discoverImage" src="images/discover07.webp" alt="Town Center" loading="lazy">
+                        <p class="discoverCaption">A view of some of the shops in the town center.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <div id="address">
+            <img id="logo" src="images/logo.gif" alt="Freiberg am Neckar Logo">
+            <p id="street">Chamber of Commerce<br>
+                Freiberg am Neckar<br>
+                123 Commerce St.<br>
+                71691 Freiberg am Neckar<br>
+                Germany
+            </p>
+            <div id="location">
+                <p>info@email.de<br>
+                    +49 123 45678<br>
+                </p>
+                <a href="https://maps.app.goo.gl/hHVzEfHdNXdcuZBb7">📍 Location</a>
+            </div>
+        </div>
+        <hr>
+        <div id="mobileFooter">
+            <p>&copy;<span id="currentYearMobile"> Project</span></p>
+            <p>Jackson Heslop</p>
+            <p>WDD 230 Project</p>
+            <p><span id="lastModifiedMobile"></span></p>
+        </div>
+        <p id="largeFooter">&copy;<span id="currentYear"> Project</span> | Jackson Heslop | WDD 230 Project | <span
+                id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/visitDate.js"></script>
+
+</body>
+
+</html>
