@@ -56,14 +56,14 @@
 
     /*DISCOVER PAGE*/
 
-    .discoverImage:hover {
+    .discoverImage:hover, .discoverImagePortrait:hover{
         border-radius: 20px;
         opacity: 0.6;
       }
 
     #discoverGrid {
         display: grid;
-        grid-template-columns: 325px 2fr;
+        grid-template-columns: 275px 2fr;
         margin-left: 5%;
         margin-right: 5%;
     }

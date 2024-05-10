@@ -182,9 +182,17 @@ hr {
 }
 
 .discoverImage {
+    aspect-ratio: 4 / 3;
+}
+
+.discoverImage, .discoverImagePortrait {
     display: block;
     max-width: 100%;
     border-radius: 5px;
+}
+
+.discoverImagePortrait {
+    aspect-ratio: 3 / 4;
 }
 
 .imageBox {
