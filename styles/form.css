@@ -1,0 +1,96 @@
+
+:root {
+    --incorrectPassword: rgba(255, 0, 0, 0.5);
+    --correctPassword: green;
+    --dark: #585757;
+    --darkest: #000000;
+    --light: rgba(211, 211, 211, 0.2);
+    --middle: rgba(128, 128, 128, 0.4);
+}
+
+.teamForm fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--dark);
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+}
+
+.teamForm legend {
+    color: var(--dark);
+    font-weight: bold;
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.teamForm label {
+    display: block;
+    padding: 0.5rem;
+    color: var(--darkest);
+}
+
+.teamForm input[type="text"],
+.teamForm input[type="password"],
+.teamForm input[type="email"] {
+    background-color: var(--light);
+    display: block;
+    border: solid 1px var(--dark);
+    border-radius: 3px;
+    padding: 0.8rem;
+    color: var(--darkest);
+    width: 95%;
+    max-width: 400px;
+    box-shadow: 1px 1px 3px var(--dark);
+}
+
+#feedback {
+    padding: 0.5rem;
+    align-content: end;
+}
+
+.teamForm input:required:valid {
+    border-left: solid 8px var(--correctPassword);
+}
+
+.teamForm input:required {
+    border-left: solid 8px var(--incorrectPassword);
+}
+
+.teamForm input[type="range"] {
+    width: 300px;
+    margin-top: 1rem;
+    accent-color: #807475;
+}
+
+#rangevalues {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin: 0 0 1rem 0.75rem;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+    padding: 0;
+}
+
+#rangevalue {
+    padding: 0.8rem;
+    font-size: 2rem;
+    color: var(--dark)
+}
+
+.teamForm input[type="submit"] {
+    border: 2px solid var(--dark);
+    background-color: var(--middle);
+    color: var(--dark);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    width: 95%;
+    max-width: 400px;
+    margin: 0 1.5rem 1rem 1.5rem;
+    box-shadow: 3px 3px 6px var(--dark);
+}
+
+
