@@ -221,7 +221,6 @@ hr {
 }
 
 /* I used the following website for help in programming the calendar: https://www.geeksforgeeks.org/how-to-design-a-simple-calendar-using-javascript/ */
-
 .calendarBox {
     width: 100%;
     max-width: 450px;
@@ -329,7 +328,141 @@ hr {
     background: #F2F2F2;
 }
 
+/* CSS for thankyou.html */
 
+#thankYouText {
+    margin: 2rem auto;
+}
+
+#thankYouText h2, #thankYouText p {
+    margin: 1rem auto;
+}
+
+
+/* JOIN PAGE */
+
+.joinHeading {
+    margin-top: 1.5rem;
+}
+
+form {
+    text-align: left;
+}
+
+fieldset {
+    margin: 2rem 0;
+    border-radius: 12px;
+    padding: 0.5rem;
+    background-color: #F7F7F7;
+    max-width: 820px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+label {
+    display: block;
+    padding: 1rem;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    display: block;
+    border-radius: 12px;
+    border: 1px solid #006CAE;
+    padding: 1rem;
+    width: 100%;
+    max-width: 800px;
+    min-width: 300px;
+    box-shadow: 1px 1px 3px #006CAE;
+}
+
+input[type="radio"] {
+    display: inline;
+    margin-right: 8px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    min-width: 300px;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 1px 1px 3px #006CAE;
+}
+
+input:required:valid {
+    border-left: solid 8px green;
+}
+
+input:required {
+    border-left: solid 8px rgba(255, 0, 0, 0.5);
+}
+
+table {
+    border: solid 1px #006CAE;
+    border: 1px solid #006CAE;
+    border-radius: 6px;
+    border-collapse: collapse;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 95%;
+    max-width: 800px;
+    color: #5a5a5a;
+}
+
+th {
+    font-size: 0.7rem;
+}
+
+td, th {
+    border: solid 1px #006CAE;
+}
+
+tr {
+    height: 2rem;
+}
+
+.memberColumn {
+    width: 36%;
+    min-width: 108px;
+    padding-left: 0.7rem;
+}
+
+.productColumn {
+    width: 16%;
+    min-width: 48px;
+    text-align: center;
+}
+
+tbody .productColumn {
+    color: green;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+input[type="submit"] {
+    border: solid 2px #006CAE;
+    background-color: #F7F7F7;
+    color: #006CAE;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 820px;
+    margin-bottom: 2rem;
+    box-shadow: 0.5px 0.5px 2px #006CAE;
+}
+
+input[type="submit"]:hover {
+    border: solid 2px #5a5a5a;
+    background-color: #006CAE;
+    color: #F7F7F7;
+}
 
 /* Keep these at the bottom of the CSS file */
 

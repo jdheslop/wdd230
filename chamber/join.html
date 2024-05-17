@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freiberg am Neckar - Chamber of Commerce - Join</title>
+
+    <meta name="description"
+        content="This is a form to join a chamber of commerce for WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Jackson Heslop">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Jackson Heslop - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.freiberg-an.de/fileadmin/_processed_/7/0/csm_Luftbild_1228630031.jpg">
+    <meta property="og:url" content="https://jdheslop.github.io/wdd230/index.html">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="headerHeading">Chamber of Commerce</h1>
+        <h2 class="headerHeading">Freiberg am Neckar</h2>
+    </header>
+
+    <picture>
+        <source media="(max-width: 640px)" srcset="images/hero-small-screen.webp">
+        <img class="heroImage" src="images/hero-large-screen.webp" alt="Image of Freiberg am Neckar" width="1800"
+            height="281">
+    </picture>
+
+    <nav>
+        <button id="menu"></button>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2 class="joinHeading">Join the Freiberg am Neckar Chamber of Commerce</h2>
+
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>User Information</legend>
+                <label>First Name* <input type="text" id="firstName" name="firstName" required></label>
+                <label>Last Name* <input type="text" id="lastName" name="lastName" required></label>
+                <label>Email*<input type="email" name="email" id="email" placeholder="myemail@email.com"
+                        required></label>
+                <label>Mobile Phone*<input type="tel" name="phone" id="phone" required></label>
+                <label>Company Name<input type="text" name="company" id="company" required></label>
+                <label>Position <input type="text" id="position" name="position" pattern="[a-zA-Z\-\s]{7,}"
+                        placeholder="Enter at least 7 letters, hyphens, or spaces."
+                        title="Please enter at least 7 letters, hyphens, or spaces."></label>
+                <label>Company Description<textarea name="description" id="description" rows="4"
+                        placeholder="Enter a description of your company here . . . "></textarea></label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="memberColumn">Membership Level</th>
+                            <th scope="col" class="productColumn">Discount</th>
+                            <th scope="col" class="productColumn">Spotlight</th>
+                            <th scope="col" class="productColumn">Training</th>
+                            <th scope="col" class="productColumn">Events</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="memberColumn"><label><input type="radio" id="gold" name="membershipLevel"
+                                        value="gold">Gold</label></td>
+                            <td class="productColumn">&check;</td>
+                            <td class="productColumn">&check;</td>
+                            <td class="productColumn">&check;</td>
+                            <td class="productColumn">&check;</td>
+                        </tr>
+                        <tr>
+                            <td class="memberColumn"><label><input type="radio" id="silver" name="membershipLevel"
+                                        value="silver">Silver</label></td>
+                            <td class="productColumn"></td>
+                            <td class="productColumn">&check;</td>
+                            <td class="productColumn">&check;</td>
+                            <td class="productColumn">&check;</td>
+                        </tr>
+                        <tr>
+                            <td class="memberColumn"><label><input type="radio" id="bronze" name="membershipLevel"
+                                        value="bronze">Bronze</label></td>
+                            <td class="productColumn"></td>
+                            <td class="productColumn"></td>
+                            <td class="productColumn">&check;</td>
+                            <td class="productColumn">&check;</td>
+                        </tr>
+                        <tr>
+                            <td class="memberColumn"><label><input type="radio" id="np" name="membershipLevel"
+                                        value="np">NP</label></td>
+                            <td class="productColumn"></td>
+                            <td class="productColumn"></td>
+                            <td class="productColumn"></td>
+                            <td class="productColumn">&check;</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+            </fieldset>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <input type="submit" value="Join Us">
+        </form>
+
+
+    </main>
+
+    <footer>
+        <div id="address">
+            <img id="logo" src="images/logo.webp" alt="Freiberg am Neckar Logo">
+            <p id="street">Chamber of Commerce<br>
+                Freiberg am Neckar<br>
+                123 Commerce St.<br>
+                71691 Freiberg am Neckar<br>
+                Germany
+            </p>
+            <div id="location">
+                <p>info@email.de<br>
+                    +49 123 45678<br>
+                </p>
+                <a href="https://maps.app.goo.gl/hHVzEfHdNXdcuZBb7">📍 Location</a>
+            </div>
+        </div>
+        <hr>
+        <div id="mobileFooter">
+            <p>&copy;<span id="currentYearMobile"> Project</span></p>
+            <p>Jackson Heslop</p>
+            <p>WDD 230 Project</p>
+            <p><span id="lastModifiedMobile"></span></p>
+        </div>
+        <p id="largeFooter">&copy;<span id="currentYear"> Project</span> | Jackson Heslop | WDD 230 Project | <span
+                id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/timestamp.js"></script>
+
+</body>
+
+</html>

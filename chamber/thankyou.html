@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freiberg am Neckar - Chamber of Commerce - Jackson Heslop</title>
+
+    <meta name="description" content="This is a chamber of commerce website for WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Jackson Heslop">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Jackson Heslop - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.freiberg-an.de/fileadmin/_processed_/7/0/csm_Luftbild_1228630031.jpg">
+    <meta property="og:url" content="https://jdheslop.github.io/wdd230/index.html">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="headerHeading">Chamber of Commerce</h1>
+        <h2 class="headerHeading">Freiberg am Neckar</h2>
+    </header>
+
+    <picture>
+        <source media="(max-width: 640px)" srcset="images/hero-small-screen.webp">
+        <img class="heroImage" src="images/hero-large-screen.webp" alt="Image of Freiberg am Neckar" width="1800"
+            height="281">
+    </picture>
+
+    <nav>
+        <button id="menu"></button>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div id="thankYouText">
+            <h2>Thank You for Joining the Freiberg am Neckar Chamber of Commerce!</h2>
+            <p>Thank you for taking the time to fill out the membership form and officially becoming a part of the Freiberg am Neckar Chamber of Commerce. Your commitment to our community and dedication to fostering economic growth are greatly appreciated.</p>
+            <p>As a member, you now have access to a wide range of resources, networking opportunities, and support services designed to help your business thrive. We look forward to working closely with you and contributing to your success.</p>
+            <p>If you have any questions or need assistance, please don't hesitate to reach out to us. Welcome to the Freiberg am Neckar Chamber of Commerce family!</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="address">
+            <img id="logo" src="images/logo.webp" alt="Freiberg am Neckar Logo">
+            <p id="street">Chamber of Commerce<br>
+                Freiberg am Neckar<br>
+                123 Commerce St.<br>
+                71691 Freiberg am Neckar<br>
+                Germany
+            </p>
+            <div id="location">
+                <p>info@email.de<br>
+                    +49 123 45678<br>
+                </p>
+                <a href="https://maps.app.goo.gl/hHVzEfHdNXdcuZBb7">📍 Location</a>
+            </div>
+        </div>
+        <hr>
+        <div id="mobileFooter">
+            <p>&copy;<span id="currentYearMobile"> Project</span></p>
+            <p>Jackson Heslop</p>
+            <p>WDD 230 Project</p>
+            <p><span id="lastModifiedMobile"></span></p>
+        </div>
+        <p id="largeFooter">&copy;<span id="currentYear"> Project</span> | Jackson Heslop | WDD 230 Project | <span
+                id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getDates.js"></script>
+
+</body>
+
+</html>

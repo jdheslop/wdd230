@@ -68,5 +68,9 @@
         margin-right: 5%;
     }
 
+    th {
+        font-size: 1rem;
+    }
+
 
 }
