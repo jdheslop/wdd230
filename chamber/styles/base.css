@@ -350,7 +350,7 @@ form {
 }
 
 fieldset {
-    margin: 2rem 0;
+    margin: 2rem auto;
     border-radius: 12px;
     padding: 0.5rem;
     background-color: #F7F7F7;
@@ -412,6 +412,7 @@ table {
     width: 95%;
     max-width: 800px;
     color: #5a5a5a;
+    background-color: #FFFFFF;
 }
 
 th {
@@ -442,6 +443,10 @@ tbody .productColumn {
     color: green;
     font-weight: bold;
     font-size: 2rem;
+}
+
+#submitButton {
+    text-align: center;
 }
 
 input[type="submit"] {
