@@ -1,0 +1,28 @@
+{
+    "familyName" : "Schmidt",
+    "movedIn" : "May 31, 2023",
+    "numberOfFamilyMembers" : 4,
+    "bishopricVisit" : true,
+    "familyMembers" : [
+        {
+            "name" : "Hannah",
+            "gender" : "female",
+            "birthdate" : "24 June 1976"
+        },
+        {
+            "name" : "Mike",
+            "gender" : "male",
+            "birthdate" : "16 February 1976"
+        },
+        {
+            "name" : "Luna",
+            "gender" : "female",
+            "birthdate" : "23 August 2016"
+        },
+        {
+            "name" : "Eric",
+            "gender" : "male",
+            "birthdate" : "16 April 2022"
+        }
+    ]
+}
