@@ -162,6 +162,16 @@ h1 {
     border-radius: 5px;
 }
 
+#weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather img {
+    margin: 0 1rem;
+}
+
 section ul {
     padding: 0 2rem;
     list-style-type: none;

@@ -1,0 +1,122 @@
+{
+    "weeks" : [
+        {
+            "week" : "Week 1",
+            "links" : [
+                {
+                    "url" : "week01/holygrail.html",
+                    "title" : "Grid Layout | "
+                },
+                {
+                    "url" : "week01/media-query.html",
+                    "title" : "Media Query | "
+                },
+                {
+                    "url" : "https://codepen.io/J-Hes/pen/BaEGPVW",
+                    "title" : "JS Pen | "
+                },
+                {
+                    "url" : "week01/chamber-site-plan.html",
+                    "title" : "Site Plan"
+                }
+            ]
+        },
+        {
+            "week" : "Week 2",
+            "links" : [
+                {
+                    "url" : "week02/design.html",
+                    "title" : "Design Principles | "
+                },
+                {
+                    "url" : "https://codepen.io/J-Hes/pen/VwNRRXG",
+                    "title" : "Hamburger Menu | "
+                },
+                {
+                    "url" : "week02/bom.html",
+                    "title" : "DOM Manipulation | "
+                },
+                {
+                    "url" : "chamber/index.html",
+                    "title" : "Home Page"
+                }
+            ]
+        },
+        {
+            "week" : "Week 3",
+            "links" : [
+                {
+                    "url" : "week03/images/landscape.webp",
+                    "title" : "WebP | "
+                },
+                {
+                    "url" : "week03/lazyload.html",
+                    "title" : "Lazy Load | "
+                },
+                {
+                    "url" : "week03/responsive-images.html",
+                    "title" : "Responsive Images | "
+                },
+                {
+                    "url" : "https://codepen.io/J-Hes/pen/xxNKrvZ?editors=0010",
+                    "title" : "Code Pen - Local Storage | "
+                },
+                {
+                    "url" : "week03/bom.html",
+                    "title" : "Web Storage API - localStorage"
+                }
+            ]
+        },
+        {
+            "week" : "Week 4",
+            "links" : [
+                {
+                    "url" : "https://codepen.io/J-Hes/pen/wvbBoBR",
+                    "title" : "CSS Pseudo-Classes | "
+                },
+                {
+                    "url" : "week04/images/Screenshot 2024-05-11 212738.png",
+                    "title" : "CSS Combinators | "
+                },
+                {
+                    "url" : "week04/tablebuild.html",
+                    "title" : "HTML Tables | "
+                },
+                {
+                    "url" : "week04/form/index.html",
+                    "title" : "HTML Forms"
+                }
+            ]
+        },
+        {
+            "week" : "Week 5",
+            "links" : [
+                {
+                    "url" : "https://codepen.io/J-Hes/pen/BaejWYL",
+                    "title" : "CSS Pseudo-elements - CodePen | "
+                },
+                {
+                    "url" : "week05/new-ward-members.json",
+                    "title" : "JSON | "
+                },
+                {
+                    "url" : "week05/prophets.html",
+                    "title" : "Fetch API (Prophets) | "
+                },
+                {
+                    "url" : "week05/weather.html",
+                    "title" : "Weather API | "
+                },
+                {
+                    "url" : "week05/pseudo-element-notes.html",
+                    "title" : "CSS Pseudo-elements Notes | "
+                },
+                {
+                    "url" : "week05/json-notes.html",
+                    "title" : "JSON Notes"
+                }
+            ]
+        }
+    ]
+}
+
