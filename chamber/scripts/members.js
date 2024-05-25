@@ -9,7 +9,8 @@ async function getDirectory() {
     const response = await fetch(membersURL);
     const data = await response.json();
 
-    displayGrid(data.companies);
+    //displayGrid(data.companies);
+    displayList(data.companies);
 
     gridButton.addEventListener("click", () => displayGrid(data.companies));
     listButton.addEventListener("click", () => displayList(data.companies));
@@ -84,6 +85,7 @@ function displayList(companies)  {
         companyRow.appendChild(tablePhone);
 
         let tableLink = document.createElement("td");
+        tableLink.setAttribute("class", "tableLink")
 
         let tableURL = document.createElement("a");
         tableURL.setAttribute("class", "tableURL")
@@ -92,7 +94,7 @@ function displayList(companies)  {
         tableURL.textContent = company.websiteName;
         
         tableLink.appendChild(tableURL);
-        companyRow.appendChild(tableURL);
+        companyRow.appendChild(tableLink);
 
         tableBody.appendChild(companyRow);
         companyTable.appendChild(tableBody);
