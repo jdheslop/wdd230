@@ -6,6 +6,7 @@
             "address" : "Marktpl. 1, 71691 Freiberg am Neckar",
             "phone" : "+49 7141 1487864",
             "website" : "https://www.ksklb.de/",
+            "websiteName" : "https://www.ksklb.de",
             "icon" : "https://www.ksklb.de/content/dam/myif/ksk-ludwigsburg/work/bilder/nbf-logos/logo_rot.svg",
             "level" : "gold"
         },
@@ -15,6 +16,7 @@
             "address" : "Marktpl. 10, 71691 Freiberg am Neckar",
             "phone" : "+49 7141 791000",
             "website" : "https://www.lizzies.de/",
+            "websiteName" : "https://www.lizzies.de",
             "icon" : "https://www.lizzies.de/-_-/res/bc501e9f-5abd-4c40-b0af-f2b3aa752911/images/files/bc501e9f-5abd-4c40-b0af-f2b3aa752911/3e863c99-deb0-4cc4-bf58-da481732cb89/409-409/4312d2127316b4d775afe0a9ae20a76d778cf6c5",
             "level" : "silver"
         },
@@ -24,6 +26,7 @@
             "address" : "Marktpl. 20, 71691 Freiberg am Neckar",
             "phone" : "+49 7141 865544",
             "website" : "https://www.edeka.de/eh/s%C3%BCdwest/e-aktiv-markt-sch%C3%B6nland-marktplatz-20/index.jsp",
+            "websiteName" : "https://www.edeka.de",
             "icon" : "https://www.edeka.de/edeka-ui-assets/images/logo.png",
             "level" : "bronze"
         },
@@ -33,6 +36,7 @@
             "address" : "Marktpl. 8, 71691 Freiberg am Neckar",
             "phone" : "+49 7141 270128",
             "website" : "https://pro-music-freiberg.de/",
+            "websiteName" : "https://pro-music-freiberg.de",
             "icon" : "https://pro-music-freiberg.de/wordpress/wp-content/uploads/2021/03/westerngitarre-pro-music-freiberg-unsplash.jpg",
             "level" : "np"
         },
@@ -42,6 +46,7 @@
             "address" : "Marktpl. 4, 71691 Freiberg am Neckar",
             "phone" : "+49 7141 72021",
             "website" : "https://freiberger-reisebuero.de/",
+            "websiteName" : "https://freiberger-reisebuero.de",
             "icon" : "https://freiberger-reisebuero.de/assets/g/view/file/15064",
             "level" : "gold"
         },
@@ -51,6 +56,7 @@
             "address" : "Mühlstraße 100, 71691 Freiberg am Neckar",
             "phone" : "+49 7141 1298435",
             "website" : "http://www.chinacenter.de/",
+            "websiteName" : "http://www.chinacenter.de",
             "icon" : "https://www.chinacenter.de/assets/img/Chinacenter_Stuttgart.png",
             "level" : "silver"
         },
@@ -60,6 +66,7 @@
             "address" : "Harteneckstraße 23, 71691 Freiberg am Neckar",
             "phone" : "+49 7141 271506",
             "website" : "https://www.rofu.de/filialen/#!/l/freiberg-am-neckar/harteneckstrasse-23/1198011",
+            "websiteName" : "https://www.rofu.de",
             "icon" : "https://www.rofu.de/out/dd_roxive_mifus/img/header/rofu_logo_220.png",
             "level" : "bronze"
         }

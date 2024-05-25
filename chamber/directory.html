@@ -54,7 +54,37 @@
 
     <main>
         <h2>Directory</h2>
+        <div class="directoryMenu">
+            <button id="gridButton">⏹️Grid</button>
+            <button id="listButton">📄List</button>
+        </div>
+        <hr>
 
+        <section id="membersDirectory">
+            <div class="companyCards">
+                <div class="companyCard">
+                    <img class="directoryImage"
+                        src="https://www.ksklb.de/content/dam/myif/ksk-ludwigsburg/work/bilder/nbf-logos/logo_rot.svg"
+                        alt="">
+                    <h4 class="gridName">Kreissparkasse Ludwigsburg - Filiale</h4>
+                    <p class="gridAddress">Marktpl. 1, 71691 Freiberg am Neckar</p>
+                    <p class="gridPhone">+49 7141 1487864</p>
+                    <a class="gridURL" href="https://www.ksklb.de/">https://www.ksklb.de/</a>
+                </div>
+            </div>
+
+            <table class="companyTable">
+                <tbody>
+                    <tr>
+                        <td class="tableName">Kreissparkasse Ludwigsburg - Filiale</td>
+                        <td class="tableAddress">Marktpl. 1, 71691 Freiberg am Neckar</td>
+                        <td class="tablePhone">+49 7141 1487864</td>
+                        <td><a class="tableURL" href="https://www.ksklb.de/">https://www.ksklb.de/</a></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
 
     </main>
 
@@ -85,8 +115,9 @@
                 id="lastModified"></span></p>
     </footer>
 
-    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/navHamburger.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/members.js"></script>
 
 </body>
 

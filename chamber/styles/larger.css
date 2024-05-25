@@ -73,4 +73,18 @@
     }
 
 
+    /* DIRECTORY PAGE */
+    
+    .companyCards {
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 16px;
+    }
+
+    .companyCard {
+        width: 95%;
+        aspect-ratio: 1/1.1;
+    }
+
 }
