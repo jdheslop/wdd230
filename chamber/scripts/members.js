@@ -9,8 +9,7 @@ async function getDirectory() {
     const response = await fetch(membersURL);
     const data = await response.json();
 
-    //displayGrid(data.companies);
-    displayList(data.companies);
+    displayGrid(data.companies);
 
     gridButton.addEventListener("click", () => displayGrid(data.companies));
     listButton.addEventListener("click", () => displayList(data.companies));
@@ -56,6 +55,9 @@ function displayGrid(companies) {
 
         companyCards.appendChild(companyCard);
         membersDirectory.appendChild(companyCards);
+
+        gridButton.style.backgroundColor = "#D2D2D2";
+        listButton.style.backgroundColor = "#F2F2F2";
     });
 }
 
@@ -99,6 +101,9 @@ function displayList(companies)  {
         tableBody.appendChild(companyRow);
         companyTable.appendChild(tableBody);
         membersDirectory.appendChild(companyTable);
+
+        gridButton.style.backgroundColor = "#F2F2F2";
+        listButton.style.backgroundColor = "#D2D2D2";
     });
 }
 
