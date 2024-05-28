@@ -105,15 +105,13 @@ section {
 	content: "-";
 }
 
-
-.cardImage, .serviceType, .eventType, .spotlightType {
-    display: none;
-    padding: 0.3rem;
-}
-
 #join {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+#join p {
+    margin: 0.5rem auto;
 }
 
 #joinButton {
@@ -124,6 +122,9 @@ section {
     background-color: #006CAE;
     color: #ffffff;
     text-decoration: none;
+    display: flex; /* Add this line */
+    justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
 }
 
 #joinButton:hover {
@@ -132,8 +133,47 @@ section {
     border-color: #006CAE;
 }
 
-#join, #weather {
+#join, #weatherCard {
     width: 90%;
+}
+
+#weather img, #weather span {
+    display: block;
+    margin: 0 auto;
+}
+
+#weather {
+    margin-bottom: 1rem;
+}
+
+#weatherCard p {
+    text-align: center;
+}
+
+#weatherForecast h4 {
+    margin-bottom: 0.5rem;
+}
+
+#weatherForecast p {
+    margin-bottom: 0.3rem;
+}
+
+#banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #5A5A5A;
+    color:#F2F2F2;
+    text-align: center;
+    padding: 1.5rem;
+    z-index: 10;
+}
+
+#closeBanner {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.7rem;
+    color: #F2F2F2;
 }
 
 footer {
@@ -163,6 +203,56 @@ hr {
     padding: 0.1rem;
     width: 80%;
     background-color: #5A5A5A;
+}
+
+
+/* CARDS (except a couple of weather cards*/
+
+.card, .companyCard {
+    border: 2px solid #006CAE;
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.companyCard, .spotlightCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.companyCard > *, .spotlightCard > * {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.companyCard a, .spotlightCard a {
+    font-size: 0.7rem;
+}
+
+.serviceCard, .eventCard, .spotlightCards {
+    display: none;
+    padding: 0.3rem;
+}
+
+.card h3 {
+    margin: 0.5rem auto;
+}
+
+.cardImage {
+    max-width: 95%;
+    margin: 0.5rem auto;
+}
+
+.card a {
+    font-size: 0.8rem;
+    margin: 0.3rem auto;
+    padding: 0.8rem;
+    display: block;
 }
 
 
@@ -490,28 +580,6 @@ input[type="submit"]:hover {
     max-width: 70%;
     height: auto;
     max-height: 80px;
-}
-
-.companyCard {
-    border: 2px solid #006CAE;
-    border-radius: 5px;
-    width: 80%;
-    height: auto;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem auto;
-}
-
-.companyCard > * {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.companyCard a {
-    font-size: 0.7rem;
 }
 
 .companyTable, .companyTable tbody, .companyTable td, .companyTable tr {

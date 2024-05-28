@@ -16,28 +16,13 @@
         display: none;
     }
 
-    .cardImage, .serviceType, .eventType, .spotlightType {
-        display: block;
-    }
-
-    .cards {
-        display: flex;
-    }
-
-    .card {
-        border: 2px solid #006CAE;
-        border-radius: 5px;
-        width: 30%;
-        padding: 0.5rem;
-    }
-
-    .cardImage {
-        max-width: 95%;
-    }
-
     #joinAndWeather {
         display: grid;
         grid-template-columns: 2fr 1fr;
+    }
+
+    #join, #weatherCard {
+        margin: 0.5rem auto;
     }
 
     #largeFooter {
@@ -51,6 +36,29 @@
     #address {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
+    /* CARDS */
+
+    .serviceCard, .eventCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+    }
+
+    .companyCards, #spotlightCards, .cards {
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 16px;
+    }
+
+    .companyCard, .spotlightCard, .card {
+        max-width: 275px;
+        aspect-ratio: 1/1.2;
     }
 
 
@@ -75,18 +83,6 @@
 
     /* DIRECTORY PAGE */
     
-    .companyCards {
-        width: 98%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 16px;
-    }
-
-    .companyCard {
-        width: 95%;
-        aspect-ratio: 1/1.1;
-    }
-
     .companyTable {
         display: table;
     }

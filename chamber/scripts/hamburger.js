@@ -20,27 +20,19 @@ function hamburgerMenu(button, data) {
 
 //SERVICES HAMBURGER
 const servicesButton = document.querySelector("#servicesMenu");
-const serviceType = document.querySelectorAll(".serviceType");
+const serviceCard = document.querySelectorAll(".serviceCard");
 
 servicesButton.addEventListener("click", function() {
-    hamburgerMenu(servicesButton, serviceType);
+    hamburgerMenu(servicesButton, serviceCard);
 });
 
 
 //EVENTS HAMBURGER
 const eventsButton = document.querySelector("#eventsMenu");
-const eventType = document.querySelectorAll(".eventType");
+const eventCard = document.querySelectorAll(".eventCard");
 
 eventsButton.addEventListener("click", function() {
-    hamburgerMenu(eventsButton, eventType);
-});
-
-//SPOTLIGHTS HAMBURGER
-const spotlightsButton = document.querySelector("#spotlightsMenu");
-const spotlightType = document.querySelectorAll(".spotlightType");
-
-spotlightsButton.addEventListener("click", function() {
-    hamburgerMenu(spotlightsButton, spotlightType);
+    hamburgerMenu(eventsButton, eventCard);
 });
 
 

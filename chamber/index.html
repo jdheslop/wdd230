@@ -59,17 +59,23 @@
                 <h2 class="heading">Services</h2>
             </div>
             <div class="cards">
-                <div class="card">
-                    <h3 class="serviceType">Service #1</h3>
-                    <img class="cardImage" src="images/stadtwappen.webp" alt="Image for one of the services">
+                <div class="card serviceCard">
+                    <h3 class="serviceType">Government Services</h3>
+                    <img class="cardImage" src="images/government.webp" alt="Image for government services">
+                    <a href="https://www.freiberg-an.de/de/buergerservice-stadt-rathaus" target="_blank">More
+                        Information</a>
                 </div>
-                <div class="card">
-                    <h3 class="serviceType">Service #2</h3>
-                    <img class="cardImage" src="images/stadtwappen.webp" alt="Image for one of the services">
+                <div class="card serviceCard">
+                    <h3 class="serviceType">Educational Services</h3>
+                    <img class="cardImage" src="images/education.webp" alt="Image for education services">
+                    <a href="https://www.freiberg-an.de/de/bildung-betreuung-soziales" target="_blank">More
+                        Information</a>
                 </div>
-                <div class="card">
-                    <h3 class="serviceType">Service #3</h3>
-                    <img class="cardImage" src="images/hero-small-screen.webp" alt="Image for one of the services">
+                <div class="card serviceCard">
+                    <h3 class="serviceType">Economic Services</h3>
+                    <img class="cardImage" src="images/economic.webp" alt="Image for economic services">
+                    <a href="https://www.freiberg-an.de/de/wirtschaft-entwicklung-bauen" target="_blank">More
+                        Information</a>
                 </div>
             </div>
         </section>
@@ -90,10 +96,18 @@
                     </p>
                 </div>
                 <a id="joinButton" href="#">Join Today!</a>
+                <p>We look forward to the cooperation!</p>
             </div>
-            <div id="weather" class="card">
+            <div id="weatherCard" class="card">
                 <h3 class="heading">Weather</h3>
-                <p>Weather information will be provided here.</p>
+                <p><span id="currentTemp"></span></p>
+                <p id="weather">
+                    <img id="weatherIcon" src="favicon.ico" alt="Weather Icon">
+                    <span id="weatherDescription"></span>
+                </p>
+                <div id="weatherForecast">
+                    <h4>Forecast</h4>
+                </div>
             </div>
         </section>
 
@@ -103,17 +117,26 @@
                 <h2 class="heading">Current Events</h2>
             </div>
             <div class="cards">
-                <div class="card">
-                    <h3 class="eventType">Event #1</h3>
-                    <img class="cardImage" src="images/stadtwappen.webp" alt="Image for one of the events">
+                <div class="card eventCard">
+                    <h3 class="eventType">Elections</h3>
+                    <p>June 9, 2024</p>
+                    <img class="cardImage" src="images/election.webp" alt="Image for one of the events">
+                    <a href="https://www.freiberg-an.de/index.php?id=536&no_cache=1&publish%5Bid%5D=1547723&publish%5Bstart%5D="
+                        target="_blank">More Information</a>
                 </div>
-                <div class="card">
-                    <h3 class="eventType">Event #2</h3>
-                    <img class="cardImage" src="images/stadtwappen.webp" alt="Image for one of the events">
+                <div class="card eventCard">
+                    <h3 class="eventType">Mayor Farewell</h3>
+                    <p>June 13, 2024 at 18:30</p>
+                    <img class="cardImage" src="images/mayor.webp" alt="Image for one of the events">
+                    <a href="https://www.freiberg-an.de/index.php?id=536&no_cache=1&publish%5Bid%5D=1553552&publish%5Bstart%5D="
+                        target="_blank">More Information</a>
                 </div>
-                <div class="card">
-                    <h3 class="eventType">Event #3</h3>
-                    <img class="cardImage" src="images/hero-small-screen.webp" alt="Image for one of the events">
+                <div class="card eventCard">
+                    <h3 class="eventType">Buergerfest 2024</h3>
+                    <p>July 19-21, 2024</p>
+                    <img class="cardImage" src="images/buergerfest.webp" alt="Image for one of the events">
+                    <a href="https://www.freiberg-an.de/de/kultur-freizeit-sport/freizeit-tourismus/freiberger-buergerfest"
+                        target="_blank">More Information</a>
                 </div>
             </div>
         </section>
@@ -123,22 +146,18 @@
                 <button id="spotlightsMenu"></button>
                 <h2 class="heading">Business Spotlights</h2>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <h3 class="spotlightType">Spotlight #1</h3>
-                    <img class="cardImage" src="images/stadtwappen.webp" alt="Image for one of the spotlights">
-                </div>
-                <div class="card">
-                    <h3 class="spotlightType">Spotlight #2</h3>
-                    <img class="cardImage" src="images/stadtwappen.webp" alt="Image for one of the spotlights">
-                </div>
-                <div class="card">
-                    <h3 class="spotlightType">Spotlight #3</h3>
-                    <img class="cardImage" src="images/hero-small-screen.webp" alt="Image for one of the events">
-                </div>
+            <div id="spotlightCards" class="cards spotlightCards">
             </div>
         </section>
+
     </main>
+
+    <div id="banner">
+        <span id="closeBanner">X</span>
+        Join us for the Chamber of Commerce Meet and Greet!
+        <br>
+        Wednesday at 7:00 p.m.
+    </div>
 
     <footer>
         <div id="address">
@@ -167,8 +186,13 @@
                 id="lastModified"></span></p>
     </footer>
 
-    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/spotlight.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/weatherForecast.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/banner.js"></script>
+
 
 </body>
 
